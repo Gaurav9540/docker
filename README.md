@@ -29,8 +29,8 @@ Docker is a tool that is used to automate the deployment of applications in ligh
   - Used in data centers and enterprise environments.
     
 *example -*
- 1. VMware - VMware ESXI
- 2. Microsoft - Hyper-V
+ - VMware - VMware ESXI
+ - Microsoft - Hyper-V
 
 3. Hosted Hypervisor
   - Runs on an existing operating system and acts as an application
