@@ -27,7 +27,6 @@ Docker is a tool that is used to automate the deployment of applications in ligh
 1. Bare-Metal Hypervisor
   - Runs directly on physical hardware without a host operating system
   - Used in data centers and enterprise environments.
-
 *example -*
   1. VMware - VMware ESXI
   2. Microsoft - Hyper-V
@@ -36,6 +35,5 @@ Docker is a tool that is used to automate the deployment of applications in ligh
 2. Hosted Hypervisor
   - Runs on an existing operating system and acts as an application
   - Used for developement and testing on personal computers
-
 *example -*
 1. Oracle - Oracle VM and Virtualbox
