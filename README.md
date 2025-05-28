@@ -33,7 +33,7 @@ Docker is a tool that is used to automate the deployment of applications in ligh
  - Microsoft - Hyper-V
  - Citrix - Xenserver
 
- ![docker_image](assets/Bare_Metal_Hypervisor.webp)
+ ![docker](assets/Bare_Metal_Hypervisor.jpg)
 
 2. Hosted Hypervisor
   - Runs on an existing operating system and acts as an application
