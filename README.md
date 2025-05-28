@@ -32,8 +32,9 @@ Docker is a tool that is used to automate the deployment of applications in ligh
  - VMware - VMware ESXI
  - Microsoft - Hyper-V
  - Citrix - Xenserver
+   
 
-3. Hosted Hypervisor
+2. Hosted Hypervisor
   - Runs on an existing operating system and acts as an application
   - Used for developement and testing on personal computers
     
