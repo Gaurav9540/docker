@@ -10,4 +10,8 @@ Docker is a tool that is used to automate the deployment of applications in ligh
 
 ![docker_image](docker_containerization.png)
 
+<hr>
 
+**What is Hypervisor**
+ - A hypervisor is software or firmware that allows you to create and manage operating systems (called guest OSes) to run simultaneously on a single physical machine (called the host).
+ - It acts as a middle layer that allocates hardware resources (cpu, memory, storage) to each VM, ensuring the operate independently.
