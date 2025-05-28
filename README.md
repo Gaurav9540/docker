@@ -1,1 +1,7 @@
 # docker
+
+**What is Docker**
+
+- Docker is a set of platform as a service (PaaS) products that use OS-level virtualization to deliver software in packages called containers.  <br>
+- The software that hosts the containers is called Docker Engine.  <br>
+- It was first released in 2013 and is developed by Docker, Inc.   <br>
