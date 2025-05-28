@@ -8,7 +8,7 @@
 
 Docker is a tool that is used to automate the deployment of applications in lightweight containers so that applications can work efficiently in different environments in isolation.
 
-<img src="assets/docker_containerization.png" alt="docker_containerization.png" width="800" height="350">
+<img src="assets/docker_containerization.png" alt="docker_containerization.png" width="900" height="400">
 
 <hr>
 
