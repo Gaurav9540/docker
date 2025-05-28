@@ -15,3 +15,15 @@ Docker is a tool that is used to automate the deployment of applications in ligh
 **What is Hypervisor**
  - A hypervisor is software or firmware that allows you to create and manage operating systems (called guest OSes) to run simultaneously on a single physical machine (called the host).
  - It acts as a middle layer that allocates hardware resources (cpu, memory, storage) to each VM, ensuring the operate independently.
+
+*example -*
+  1. VMware - VMware ESXI
+  2. Microsoft - Hyper-V
+  3. Oracle - Oracle VM and Virtualbox
+  4. Citrix - Xenserver
+
+*Types of Hypervisor :*
+
+1. Bare-Metal Hypervisor
+ - Runs directly on physical hardware without a host operating system
+ - Used in data centers and enterprise environments.
