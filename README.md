@@ -32,7 +32,8 @@ Docker is a tool that is used to automate the deployment of applications in ligh
  - VMware - VMware ESXI
  - Microsoft - Hyper-V
  - Citrix - Xenserver
-   
+
+ ![docker_image](assets/Bare_Metal_ Hypervisor.webp)
 
 2. Hosted Hypervisor
   - Runs on an existing operating system and acts as an application
@@ -40,3 +41,5 @@ Docker is a tool that is used to automate the deployment of applications in ligh
     
 *example -*
  - Oracle - Oracle VM and Virtualbox
+
+![docker_image](assets/Hosted_Hypervisor.jpg)
