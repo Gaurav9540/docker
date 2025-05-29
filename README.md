@@ -31,10 +31,24 @@ Containerization is a lightweight form of virtualization that involves packaging
  - Fast: Containers start and stop almost instantly.
 
 🛠️ *Example Workflow:*
- 1. Pull an image:
-    ```
-    docker pull nginx
-    ```
+1. Pull an image:
+
+```
+docker pull nginx
+```
+
+2. Run a container:
+
+```
+docker run -d --name spider -p 80:80 nginx
+```
+This runs the NGINX web server inside a Docker container.
+
+3. List running containers:
+
+```ssh
+docker ps
+```
 
 <hr>
 
