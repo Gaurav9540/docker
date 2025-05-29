@@ -10,6 +10,9 @@ Docker is a tool that is used to automate the deployment of applications in ligh
 
 <img src="assets/docker_containerization.png" alt="docker_containerization.png" width="900" height="400">
 
+**What is Contenerization**
+Containerization is a lightweight form of virtualization that involves packaging an application and all its dependencies (libraries, config files, etc.) into a single unit called a container.
+
 <hr>
 
 **What is Hypervisor**
