@@ -14,6 +14,28 @@ Docker is a tool that is used to automate the deployment of applications in ligh
 
 Containerization is a lightweight form of virtualization that involves packaging an application and all its dependencies (libraries, config files, etc.) into a single unit called a container.
 
+🧱 Key Concepts:
+
+```ssh
+| Concept           | Description                                                                  |
+| ----------------- | ---------------------------------------------------------------------------- |
+|   Container       | A running instance of a Docker **image** (like a virtual environment).       |
+|   Image           | A snapshot/template used to create containers. Think of it like a blueprint. |
+|   Docker Engine   | The core service that runs and manages containers.                           |
+```
+
+🚀 *What Makes Containers Special?*
+ - Isolated: Each container runs independently with its own filesystem, network, and process space.
+ - Lightweight: Containers share the host system’s kernel, so they use fewer resources than virtual machines.
+ - Portable: You can build a container once and run it anywhere (local machine, server, cloud).
+ - Fast: Containers start and stop almost instantly.
+
+🛠️ *Example Workflow:*
+ 1. Pull an image:
+    ```
+    docker pull nginx
+    ```
+
 <hr>
 
 **What is Hypervisor**
