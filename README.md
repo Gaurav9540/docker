@@ -100,7 +100,7 @@ In Docker, containers are ephemeral by default — when you delete a container, 
 🔹 2. Docker Volume  <br>
 
 🔸 1. Bind Mount
-Definition: A bind mount maps a specific file or directory on the host into the container.
+Definition: A bind mount maps a specific file or directory on the host into the container. <br>
 ✅ Characteristics:  <br>
  - You specify the exact path on the host.
  - The file/directory must already exist on the host (or be created manually).
