@@ -100,8 +100,22 @@ In Docker, containers are ephemeral by default — when you delete a container, 
 🔹 2. Docker Volume  <br>
 
 🔸 1. Bind Mount  <br>
-Definition: A bind mount maps a specific file or directory on the host into the container. <br>
-✅ Characteristics:
+ Definition: A bind mount maps a specific file or directory on the host into the container. <br>
+ ✅ Characteristics:
  - You specify the exact path on the host.
  - The file/directory must already exist on the host (or be created manually).
  - Useful for local development (e.g., sharing source code into a container).
+
+📦 Example:
+```ssh
+docker run -v /host/path:/container/path myimage
+```
+
+🔍 Pros:  <br>
+ - Easy for development and debugging.  <br>
+ - Gives full control over host files.  <br>
+
+⚠️ Cons:  <br>
+ - Less portable (depends on host paths).  <br>
+ - No Docker CLI/API management. <br>
+ - Risk of accidentally modifying host files.  <br>
