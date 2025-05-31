@@ -120,4 +120,10 @@ docker run -v /host/path:/container/path myimage
  - Risk of accidentally modifying host files.  <br>
 
 
- 🔹 **2. Docker Volume -** A volume is managed by Docker and stored in Docker's storage directory (usually under /var/lib/docker/volumes/).
+
+ 🔹 **2. Docker Volume -** A volume is managed by Docker and stored in Docker's storage directory (usually under /var/lib/docker/volumes/).  <br>
+
+ ✅ Characteristics:
+ - Docker manages the volume lifecycle.
+ - You don't need to know the host path.
+ - Ideal for production and persistent data (like databases).
