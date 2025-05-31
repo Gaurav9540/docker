@@ -94,3 +94,7 @@ In Docker, containers are ephemeral by default — when you delete a container, 
  - Persisting application data
  - Sharing data between containers
  - Backing up/Restoring container data
+
+*Types of Docker Volume* <br>
+🔸 1. Bind Mount
+🔹 2. Docker Volume
