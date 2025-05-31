@@ -127,3 +127,19 @@ docker run -v /host/path:/container/path myimage
  - Docker manages the volume lifecycle.
  - You don't need to know the host path.
  - Ideal for production and persistent data (like databases).
+
+📦 Example:
+```ssh
+docker volume create myvolume
+docker run -v myvolume:/container/path myimage
+```
+
+🔍 Pros:
+ - Safer and more portable.
+ - Backed up and managed via Docker CLI.
+ - More secure and isolated from the host.
+
+⚠️ Cons:
+ - Less transparent (you don’t see data easily on the host).
+ - Slightly more effort to inspect data manually.
+
