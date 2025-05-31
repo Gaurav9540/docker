@@ -99,7 +99,7 @@ In Docker, containers are ephemeral by default — when you delete a container, 
 🔸 1. Bind Mount  <br>
 🔹 2. Docker Volume  <br>
 
-🔸 1. Bind Mount - A bind mount maps a specific file or directory on the host into the container. <br>
+🔸 **1. Bind Mount** - A bind mount maps a specific file or directory on the host into the container. <br>
  ✅ Characteristics:
  - You specify the exact path on the host.
  - The file/directory must already exist on the host (or be created manually).
@@ -118,3 +118,6 @@ docker run -v /host/path:/container/path myimage
  - Less portable (depends on host paths).  <br>
  - No Docker CLI/API management. <br>
  - Risk of accidentally modifying host files.  <br>
+
+
+ 🔹 **2. Docker Volume -** A volume is managed by Docker and stored in Docker's storage directory (usually under /var/lib/docker/volumes/).
