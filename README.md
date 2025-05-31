@@ -98,3 +98,10 @@ In Docker, containers are ephemeral by default — when you delete a container, 
 *Types of Docker Volume* <br>
 🔸 1. Bind Mount  <br>
 🔹 2. Docker Volume  <br>
+
+🔸 1. Bind Mount
+Definition: A bind mount maps a specific file or directory on the host into the container.
+✅ Characteristics:
+ - You specify the exact path on the host.
+ - The file/directory must already exist on the host (or be created manually).
+ - Useful for local development (e.g., sharing source code into a container).
