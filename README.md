@@ -155,3 +155,5 @@ docker run -v myvolume:/container/path myimage
 | Access from host   | 🔧 Harder (under Docker dirs) | 🧾 Easy (clear file paths)     |
 | Use case example   | Database storage              | Mounting source code during dev |
 ```
+
+<hr>
