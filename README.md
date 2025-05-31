@@ -143,3 +143,15 @@ docker run -v myvolume:/container/path myimage
  - Less transparent (you don’t see data easily on the host).
  - Slightly more effort to inspect data manually.
 
+🧠 **Key Differences :**
+
+```ssh
+| Feature            | Volume                        | Bind Mount                      |
+| ------------------ | ----------------------------- | ------------------------------- |
+| Managed by Docker  | ✅ Yes                        | ❌ No                          |
+| Host path required | ❌ No                         | ✅ Yes                         |
+| Portability        | ✅ High                       | ❌ Low                         |
+| Use in production  | ✅ Recommended                | ❌ Not recommended             |
+| Access from host   | 🔧 Harder (under Docker dirs) | 🧾 Easy (clear file paths)     |
+| Use case example   | Database storage              | Mounting source code during dev |
+```
