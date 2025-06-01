@@ -95,10 +95,14 @@ In Docker, containers are ephemeral by default — when you delete a container, 
  - Sharing data between containers
  - Backing up/Restoring container data
 
+<hr>
+
 **Note** - You cannot mount a directory to an already created or running Docker container directly — Docker's design does not allow changing volume mounts after container creation.
 
 🚫 **Why you can't mount directly**
 Docker volumes and bind mounts are set at container creation time and stored in the container's config. Modifying that live would break isolation and consistency guarantees.
+
+<hr>
 
 *Types of Docker Volume* <br>
 🔸 1. Bind Mount  <br>
