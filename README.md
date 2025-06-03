@@ -172,7 +172,7 @@ docker run -v myvolume:/container/path myimage
 Docker builds images by reading the instructions from a Dockerfile. A Dockerfile is a text file containing instructions for building your source code. The Dockerfile instruction syntax is defined by the specification reference in the Dockerfile reference.
 
 Here are the most common types of instructions:
-<img src="assets/dockerfile.png" alt="assets/dockerfile.png" width="900" height="400">
+<img src="assets/dockerfile.png" alt="assets/dockerfile.png" width="900" height="430">
 
 <hr>
 
