@@ -12,8 +12,8 @@ WORKDIR /var/www/localhost/htdocs/
 # Copy index.html to Apache's root directory
 COPY index.html .
 
-# Expose port 85
-EXPOSE 85
+# Expose port 80
+EXPOSE 80
 
 # Start Apache in foreground
 CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
