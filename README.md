@@ -181,6 +181,6 @@ The default filename to use for a Dockerfile is *Dockerfile*, without a file ext
 
 <hr>
 
-**Docker Compose**
+**Docker Compose :**
 
 <hr>
