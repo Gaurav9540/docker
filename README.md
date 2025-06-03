@@ -177,7 +177,7 @@ Here are the most common types of instructions:
 
 **Filename**
 
-The default filename to use for a Dockerfile is Dockerfile, without a file extension. Using the default name allows you to run the docker build command without having to specify additional command flags.
+The default filename to use for a Dockerfile is *Dockerfile*, without a file extension. Using the default name allows you to run the *docker build* command without having to specify additional command flags.
 
 <hr>
 
