@@ -379,4 +379,9 @@ docker network create --driver overlay my-overlay
 ```
 Needs Docker Swarm to be initialized: *docker swarm init*
 
+**5. Macvlan**
+ - Use case: Assign containers a real IP on your LAN.
+ - Acts like a separate physical device on the network.
+ - Advanced use; requires extra setup.
+
 <hr>
