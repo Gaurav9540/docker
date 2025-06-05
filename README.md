@@ -181,11 +181,11 @@ Here are the most common types of instructions:
 
 🔹 **Why Use a Dockerfile?**
 
-✅ *Automation* - You can automate the creation of Docker images with consistent and repeatable builds.
-✅ *Portability* - Ensures the same environment across all systems (local, dev, staging, production).
-✅ *Version Control* - You can track changes in Dockerfiles with Git, like with your code.
-✅ *Custom Images* - Lets you customize images for your exact needs (install specific tools, configs, etc.).
-✅ *Ease of Sharing*	 - Share your Dockerfile in your repo, and anyone can build the exact same image.
+✅ *Automation* - You can automate the creation of Docker images with consistent and repeatable builds.  <br>
+✅ *Portability* - Ensures the same environment across all systems (local, dev, staging, production).  <br>
+✅ *Version Control* - You can track changes in Dockerfiles with Git, like with your code. <br>
+✅ *Custom Images* - Lets you customize images for your exact needs (install specific tools, configs, etc.).  <br>
+✅ *Ease of Sharing*	 - Share your Dockerfile in your repo, and anyone can build the exact same image.  <br>
 
 Example:
 ```ssh
