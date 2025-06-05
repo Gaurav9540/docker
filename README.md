@@ -216,9 +216,9 @@ CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
 
 **Docker Compose :**
 
-Docker Compose is a tool used to define and run multi-container Docker applications.
+Docker Compose is a tool that lets you define and manage multi-container Docker applications using a simple YAML file (docker-compose.yml).
 
-Instead of manually running multiple *docker run* commands for each container in your app, you can define them all in a single YAML file *(docker-compose.yml)* and manage them together.
+Instead of starting each container manually with long docker run commands, you write one configuration file that describes all containers, their networks, and volumes, and then use one command to start everything.
 
 🔧 *What Docker Compose Does:*
  - Defines services (containers) in a single file.
