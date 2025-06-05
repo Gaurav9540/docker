@@ -355,7 +355,28 @@ docker run -it --network my-bridge busybox ping web
 
 **2. Host**
  - Use case: Container shares the host's network stack.
- - No isolation — the container uses the host’s IP and ports.
+ - No isolation - the container uses the host’s IP and ports.
  - Only available on Linux.
+
+```ssh
+docker run --network host nginx
+```
+
+**3. None**
+ - Use case: Completely isolated container (no network).
+ - Useful for security or testing.
+
+```ssh
+docker run --network none busybox
+```
+
+**4. Overlay (Swarm Mode)**
+ - Use case: Multi-host Docker Swarm deployments.
+ - Connect containers across different hosts.
+
+```ssh
+docker network create --driver overlay my-overlay
+```
+Needs Docker Swarm to be initialized: *docker swarm init*
 
 <hr>
