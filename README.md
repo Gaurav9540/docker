@@ -384,4 +384,18 @@ Needs Docker Swarm to be initialized: *docker swarm init*
  - Acts like a separate physical device on the network.
  - Advanced use; requires extra setup.
 
+
+⚙️ **Useful Docker Networking Commands**
+
+```ssh
+| Command                         | Description                                    |
+| ------------------------------- | ---------------------------------------------- |
+|  docker network ls              | List all networks                              |
+|  docker network inspect <name>  | Show details of a network                      |
+|  docker network create <name>   | Create a new network                           |
+|  docker run --network <name>    | Run a container on a specific network          |
+|  docker network connect         | Connect a running container to another network |
+|  docker network disconnect      | Remove a container from a network              |
+```
+
 <hr>
