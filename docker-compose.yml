@@ -1,0 +1,19 @@
+version: "3"
+services:
+  webserver:
+    image: bala976/practice:bala
+    ports:
+      - 80:80
+    environment:
+      - department=dev
+  backend:
+    image: bala976/practice:alpine
+    ports:
+      - 8080:80
+    volume:
+      path: 
+  
+  web:
+    image: nginx
+    ports:
+      - "81:80"
