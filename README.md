@@ -295,6 +295,28 @@ You can build your app in one stage, and copy only the necessary output into the
   - You get a clean, small image.
   - Only the runtime essentials go into the final image.
 
+
+📄 **Example: Node.js + Nginx App (React Build)**
+
+```ssh
+# Stage 1: Build the React app
+FROM node:18 AS builder
+
+WORKDIR /app
+COPY package*.json ./
+RUN npm install
+COPY . .
+RUN npm run build
+
+# Stage 2: Serve with Nginx
+FROM nginx:alpine
+
+COPY --from=builder /app/build /usr/share/nginx/html
+
+EXPOSE 80
+CMD ["nginx", "-g", "daemon off;"]
+```
+
 <hr>
 
 **Docker Networking :**
