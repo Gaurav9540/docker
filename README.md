@@ -173,6 +173,8 @@ Docker builds images by reading the instructions from a Dockerfile. A Dockerfile
 
 The default filename to use for a Dockerfile is *Dockerfile*, without a file extension. Using the default name allows you to run the *docker build* command without having to specify additional command flags.
 
+Each instruction in a Dockerfile tells Docker what to do when building the image—like which base image to use, what files to copy, what software to install, and which command to run when the container starts.
+
 Here are the most common types of instructions:
 
 <img src="assets/dockerfile.png" alt="assets/dockerfile.png" width="900" height="430">
