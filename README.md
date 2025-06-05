@@ -328,6 +328,12 @@ CMD ["nginx", "-g", "daemon off;"]
 |  COPY --from=builder      | Only the `build/` output is copied into the final image |
 ```
 
+🏁 **Benefits:**
+
+⚡ Smaller size — no Node.js or source code in the final image.
+🔐 More secure — no extra tools like compilers or debuggers.
+📦 Cleaner deployments — just your app and what it needs to run.
+
 <hr>
 
 **Docker Networking :**
