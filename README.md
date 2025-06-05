@@ -330,9 +330,9 @@ CMD ["nginx", "-g", "daemon off;"]
 
 🏁 **Benefits:**
 
-⚡ Smaller size — no Node.js or source code in the final image.
-🔐 More secure — no extra tools like compilers or debuggers.
-📦 Cleaner deployments — just your app and what it needs to run.
+⚡ Smaller size — no Node.js or source code in the final image.  <br>
+🔐 More secure — no extra tools like compilers or debuggers.  <br>
+📦 Cleaner deployments — just your app and what it needs to run.  <br>
 
 <hr>
 
