@@ -317,6 +317,17 @@ EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
 ```
 
+🔍 **What’s Happening Here?**
+
+```ssh
+| Stage                     | Description                                             |
+| ------------------------- | ------------------------------------------------------- |
+|  FROM node:18 AS builder  | First stage builds the React app using Node.js          |
+|  RUN npm run build        | Produces static HTML/CSS/JS in `/app/build`             |
+|  FROM nginx:alpine        | Second stage uses a tiny Nginx image                    |
+|  COPY --from=builder      | Only the `build/` output is copied into the final image |
+```
+
 <hr>
 
 **Docker Networking :**
