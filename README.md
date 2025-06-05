@@ -353,4 +353,9 @@ docker run -d --name web --network my-bridge nginx
 docker run -it --network my-bridge busybox ping web
 ```
 
+**2. Host**
+ - Use case: Container shares the host's network stack.
+ - No isolation — the container uses the host’s IP and ports.
+ - Only available on Linux.
+
 <hr>
