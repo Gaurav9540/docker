@@ -6,13 +6,12 @@ services:
       - 80:80
     environment:
       - department=dev
+
   backend:
     image: bala976/practice:alpine
     ports:
       - 8080:80
-    volume:
-      path: 
-  
+      
   web:
     image: nginx
     ports:
