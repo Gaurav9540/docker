@@ -179,6 +179,18 @@ Here are the most common types of instructions:
 
 <img src="assets/dockerfile.png" alt="assets/dockerfile.png" width="900" height="430">
 
+🔹 **Why Use a Dockerfile?**
+
+```ssh
+| Reason                | Explanation                                                                             |
+| --------------------- | --------------------------------------------------------------------------------------- |
+| ✅  Automation        | You can automate the creation of Docker images with consistent and repeatable builds.   |
+| ✅  Portability       | Ensures the same environment across all systems (local, dev, staging, production).      |
+| ✅  Version Control   | You can track changes in Dockerfiles with Git, like with your code.                     |
+| ✅  Custom Images     | Lets you customize images for your exact needs (install specific tools, configs, etc.). |
+| ✅  Ease of Sharing   | Share your Dockerfile in your repo, and anyone can build the exact same image.          |
+```
+
 Example:
 ```ssh
 FROM alpine:latest
