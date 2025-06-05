@@ -171,13 +171,36 @@ docker run -v myvolume:/container/path myimage
 
 Docker builds images by reading the instructions from a Dockerfile. A Dockerfile is a text file containing instructions for building your source code. The Dockerfile instruction syntax is defined by the specification reference in the Dockerfile reference.
 
+The default filename to use for a Dockerfile is *Dockerfile*, without a file extension. Using the default name allows you to run the *docker build* command without having to specify additional command flags.
+
 Here are the most common types of instructions:
 
 <img src="assets/dockerfile.png" alt="assets/dockerfile.png" width="900" height="430">
 
-**Filename -**
+Example:
+```ssh
+FROM alpine:latest
 
-The default filename to use for a Dockerfile is *Dockerfile*, without a file extension. Using the default name allows you to run the *docker build* command without having to specify additional command flags.
+# Install Apache HTTP Server
+RUN apk update && apk add --no-cache apache2
+
+# Set environment variable
+ENV project=dev
+
+# Set working directory
+WORKDIR /var/www/localhost/htdocs/
+
+# Copy index.html to Apache's root directory
+COPY index.html .
+
+# Expose port 80
+EXPOSE 80
+
+# Start Apache in foreground
+CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
+```
+
+
 
 <hr>
 
