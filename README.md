@@ -228,6 +228,15 @@ Instead of starting each container manually with long docker run commands, you w
 docker-compose up
 ```
 
+🔷 **Why Use Docker Compose?**
+
+✅ *Simplifies Multi-Container Setups* - Run complex applications (like a web app + database + cache) with a single command.   <br>
+✅ *Centralized Configuration* - All settings (ports, volumes, environment variables) are in one docker-compose.yml file.  <br>
+✅ *Improves Development Workflow* - Easily share the setup with your team or deploy the same configuration anywhere.  <br>
+✅ *Consistent Environment*	 - Reproduces the same container setup on every machine.  <br>
+✅ *Easier Networking*	 - All containers are connected automatically in a single network and can refer to each other by service name.   <br>
+
+
 📄 *Example: docker-compose.yml*
 ```ssh
 version: '3'
