@@ -340,7 +340,7 @@ CMD ["nginx", "-g", "daemon off;"]
 
 Docker networking allows containers to communicate with each other, with the host, and with external networks (like the internet).
 
-🔗 *Docker Network Types*
+🔗 *Docker Network Types*  <br>
  **1. Bridge (default)**
  - Use case: Containers on the same host that need to talk to each other.
  - Docker creates a bridge network automatically (bridge).
