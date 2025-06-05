@@ -209,4 +209,42 @@ CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
 Docker Compose is a tool used to define and run multi-container Docker applications.
 
 Instead of manually running multiple *docker run* commands for each container in your app, you can define them all in a single YAML file *(docker-compose.yml)* and manage them together.
+
+🔧 *What Docker Compose Does:*
+ - Defines services (containers) in a single file.
+ - Sets up networks and volumes automatically.
+ - Runs multiple containers with one command:
+```ssh
+docker-compose up
+```
+
+📄 *Example: docker-compose.yml*
+```ssh
+version: '3'
+services:
+  web:
+    image: nginx
+    ports:
+      - "80:80"
+  app:
+    image: my-node-app
+    ports:
+      - "3000:3000"
+    depends_on:
+      - db
+  db:
+    image: mongo
+    volumes:
+      - data:/data/db
+
+volumes:
+  data:
+```
+
+*This file:*
+
+ - Runs 3 containers: nginx, a Node.js app, and MongoDB.
+ - Exposes necessary ports.
+ - Links the app to the database.
+
 <hr>
