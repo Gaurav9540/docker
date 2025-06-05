@@ -247,4 +247,16 @@ volumes:
  - Exposes necessary ports.
  - Links the app to the database.
 
+✅ **Common Commands:**
+
+```ssh
+| Command                | Description                      |
+| ---------------------- | -------------------------------- |
+|  docker-compose up     | Start all services               |
+|  docker-compose down   | Stop and remove all services     |
+|  docker-compose build  | Build images defined in the file |
+|  docker-compose logs   | View logs from all containers    |
+|  docker-compose ps     | List all running containers      |
+```
+
 <hr>
