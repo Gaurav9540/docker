@@ -280,7 +280,20 @@ volumes:
 
 <hr>
 
-**Multistage Docker Build :**
+🐳 **What Is a Multi-Stage Docker Build?**
+
+A multi-stage Docker build is a method for creating Docker images that are smaller, more secure, and optimized, by using multiple *FROM* instructions in a single Dockerfile.
+
+You can build your app in one stage, and copy only the necessary output into the final image — excluding unnecessary tools, dependencies, or build files.
+
+✅ **Why Use Multi-Stage Builds?**
+ - Without multi-stage builds:
+   - You end up with large images (because compilers, build tools, etc. stay in the final image).
+   - You risk security and bloat.
+
+- With multi-stage builds:
+  - You get a clean, small image.
+  - Only the runtime essentials go into the final image.
 
 <hr>
 
