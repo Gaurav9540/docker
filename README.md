@@ -330,12 +330,26 @@ CMD ["nginx", "-g", "daemon off;"]
 
 🏁 **Benefits:**
 
-⚡ Smaller size — no Node.js or source code in the final image.  <br>
-🔐 More secure — no extra tools like compilers or debuggers.  <br>
-📦 Cleaner deployments — just your app and what it needs to run.  <br>
+⚡ Smaller size - no Node.js or source code in the final image.  <br>
+🔐 More secure - no extra tools like compilers or debuggers.  <br>
+📦 Cleaner deployments - just your app and what it needs to run.  <br>
 
 <hr>
 
-**Docker Networking :**
+**🐳 Docker Networking :**
+
+Docker networking allows containers to communicate with each other, with the host, and with external networks (like the internet).
+
+🔗 *Docker Network Types*
+ **1. Bridge (default)**
+ - Use case: Containers on the same host that need to talk to each other.
+ - Docker creates a bridge network automatically (bridge).
+ - Containers get a private IP and can communicate using container names.
+
+```ssh
+docker network create my-bridge
+docker run -d --name web --network my-bridge nginx
+docker run -it --network my-bridge busybox ping web
+```
 
 <hr>
