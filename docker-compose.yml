@@ -16,3 +16,10 @@ services:
     image: nginx
     ports:
       - "81:80"
+  
+  m1:
+    image: httpd
+    ports:
+      - "85:80"
+    volumes:
+      - index.html:/usr/local/apache2/htdocs/
