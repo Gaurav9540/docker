@@ -17,7 +17,7 @@ services:
     ports:
       - "81:80"
   
-  m1:
+  machine:
     image: httpd
     ports:
       - "85:80"
